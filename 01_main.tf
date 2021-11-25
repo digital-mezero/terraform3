@@ -10,3 +10,4 @@ resource "aws_vpc" "zero_vpc"{
         "Name" = "zero-vpc"
     }
 }
+#abcd
