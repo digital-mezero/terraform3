@@ -22,6 +22,7 @@ resource "aws_instance" "zero_web" {
     availability_zone = "ap-northeast-2a"
     private_ip = "10.0.0.11"
     subnet_id = aws_subnet.zero_pub_a.id
+    user_data = file("./install.sh")
 
     tags = {
         "Name" = "zero-web"

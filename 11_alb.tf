@@ -8,3 +8,7 @@ resource "aws_lb" "zero_alb"{
         "Name" = "zero-alb"
     }
 }
+
+output "dns_name" {
+    value = aws_lb.zero_alb.dns_name
+}
